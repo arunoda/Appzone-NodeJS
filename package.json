@@ -1,0 +1,23 @@
+{
+    "name": "appzone",
+    "version": "0.1.0beta",
+    "directories": {
+        "lib": "./lib"
+    },
+    "main": "./lib/appzone",
+    "description": "Appzone NodeJS Client",
+    "author": "Arunoda Susiripala <arunoda.susiripala@gmail.com>",
+    "homepage": "https://github.com/arunoda/Appzone-NodeJS",
+    "licenses": [
+        {
+            "type": "The MIT License",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    
+    "repository" :
+    {
+        "type" : "git",
+        "url" : "git@github.com:arunoda/Appzone-NodeJS.git"
+    }
+}
