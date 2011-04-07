@@ -14,7 +14,11 @@
             "url": "http://www.opensource.org/licenses/mit-license.php"
         }
     ],
-    
+    "dependencies": {
+	    "express": ">= 1.0.7 < 2.0.0",
+	    "restler": ">= 0.2.1",
+	    "xml2js": ">= 0.1.5"
+	 },
     "repository" :
     {
         "type" : "git",
