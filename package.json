@@ -1,6 +1,6 @@
 {
     "name": "appzone",
-    "version": "0.1.0beta",
+    "version": "0.1.1beta",
     "directories": {
         "lib": "./lib"
     },
