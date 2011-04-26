@@ -68,7 +68,7 @@ function Simulator(port, afterStarted) {
 		onAuthCallback = callback;
 	};
 	
-	this.done = function() {
+	this.close = function() {
 		app.close();
 	};
 	

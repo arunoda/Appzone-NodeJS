@@ -6,287 +6,36 @@ if (! _$jscoverage['appzone.js']) {
   _$jscoverage['appzone.js'][28] = 0;
   _$jscoverage['appzone.js'][29] = 0;
   _$jscoverage['appzone.js'][30] = 0;
-  _$jscoverage['appzone.js'][32] = 0;
-  _$jscoverage['appzone.js'][33] = 0;
+  _$jscoverage['appzone.js'][31] = 0;
   _$jscoverage['appzone.js'][34] = 0;
-  _$jscoverage['appzone.js'][35] = 0;
-  _$jscoverage['appzone.js'][36] = 0;
-  _$jscoverage['appzone.js'][39] = 0;
-  _$jscoverage['appzone.js'][45] = 0;
-  _$jscoverage['appzone.js'][46] = 0;
-  _$jscoverage['appzone.js'][47] = 0;
-  _$jscoverage['appzone.js'][49] = 0;
-  _$jscoverage['appzone.js'][52] = 0;
-  _$jscoverage['appzone.js'][54] = 0;
-  _$jscoverage['appzone.js'][55] = 0;
-  _$jscoverage['appzone.js'][56] = 0;
-  _$jscoverage['appzone.js'][57] = 0;
-  _$jscoverage['appzone.js'][59] = 0;
-  _$jscoverage['appzone.js'][63] = 0;
-  _$jscoverage['appzone.js'][65] = 0;
-  _$jscoverage['appzone.js'][66] = 0;
-  _$jscoverage['appzone.js'][68] = 0;
-  _$jscoverage['appzone.js'][72] = 0;
-  _$jscoverage['appzone.js'][74] = 0;
-  _$jscoverage['appzone.js'][78] = 0;
-  _$jscoverage['appzone.js'][79] = 0;
-  _$jscoverage['appzone.js'][81] = 0;
-  _$jscoverage['appzone.js'][83] = 0;
-  _$jscoverage['appzone.js'][84] = 0;
-  _$jscoverage['appzone.js'][85] = 0;
-  _$jscoverage['appzone.js'][86] = 0;
-  _$jscoverage['appzone.js'][89] = 0;
-  _$jscoverage['appzone.js'][96] = 0;
-  _$jscoverage['appzone.js'][98] = 0;
-  _$jscoverage['appzone.js'][108] = 0;
-  _$jscoverage['appzone.js'][109] = 0;
-  _$jscoverage['appzone.js'][110] = 0;
-  _$jscoverage['appzone.js'][112] = 0;
-  _$jscoverage['appzone.js'][114] = 0;
-  _$jscoverage['appzone.js'][115] = 0;
-  _$jscoverage['appzone.js'][118] = 0;
-  _$jscoverage['appzone.js'][119] = 0;
-  _$jscoverage['appzone.js'][120] = 0;
-  _$jscoverage['appzone.js'][124] = 0;
-  _$jscoverage['appzone.js'][125] = 0;
-  _$jscoverage['appzone.js'][126] = 0;
-  _$jscoverage['appzone.js'][127] = 0;
-  _$jscoverage['appzone.js'][129] = 0;
-  _$jscoverage['appzone.js'][141] = 0;
-  _$jscoverage['appzone.js'][142] = 0;
-  _$jscoverage['appzone.js'][143] = 0;
-  _$jscoverage['appzone.js'][147] = 0;
-  _$jscoverage['appzone.js'][148] = 0;
-  _$jscoverage['appzone.js'][151] = 0;
-  _$jscoverage['appzone.js'][153] = 0;
-  _$jscoverage['appzone.js'][154] = 0;
-  _$jscoverage['appzone.js'][161] = 0;
-  _$jscoverage['appzone.js'][162] = 0;
-  _$jscoverage['appzone.js'][163] = 0;
-  _$jscoverage['appzone.js'][165] = 0;
-  _$jscoverage['appzone.js'][166] = 0;
-  _$jscoverage['appzone.js'][168] = 0;
-  _$jscoverage['appzone.js'][169] = 0;
-  _$jscoverage['appzone.js'][170] = 0;
-  _$jscoverage['appzone.js'][173] = 0;
-  _$jscoverage['appzone.js'][174] = 0;
-  _$jscoverage['appzone.js'][175] = 0;
-  _$jscoverage['appzone.js'][183] = 0;
-  _$jscoverage['appzone.js'][184] = 0;
-  _$jscoverage['appzone.js'][185] = 0;
-  _$jscoverage['appzone.js'][186] = 0;
-  _$jscoverage['appzone.js'][190] = 0;
-  _$jscoverage['appzone.js'][193] = 0;
-  _$jscoverage['appzone.js'][195] = 0;
-  _$jscoverage['appzone.js'][196] = 0;
+  _$jscoverage['appzone.js'][37] = 0;
+  _$jscoverage['appzone.js'][38] = 0;
+  _$jscoverage['appzone.js'][41] = 0;
+  _$jscoverage['appzone.js'][42] = 0;
 }
 _$jscoverage['appzone.js'][27]++;
-var rest = require("restler");
-_$jscoverage['appzone.js'][28]++;
-var xml2js = require("xml2js-expat");
-_$jscoverage['appzone.js'][29]++;
-var connect = require("connect");
-_$jscoverage['appzone.js'][30]++;
-var qbox = require("qbox");
-_$jscoverage['appzone.js'][32]++;
 Array.prototype.contains = (function (obj) {
-  _$jscoverage['appzone.js'][33]++;
+  _$jscoverage['appzone.js'][28]++;
   var i = this.length;
-  _$jscoverage['appzone.js'][34]++;
+  _$jscoverage['appzone.js'][29]++;
   while (i--) {
-    _$jscoverage['appzone.js'][35]++;
+    _$jscoverage['appzone.js'][30]++;
     if (this[i] === obj) {
-      _$jscoverage['appzone.js'][36]++;
+      _$jscoverage['appzone.js'][31]++;
       return true;
     }
 }
-  _$jscoverage['appzone.js'][39]++;
+  _$jscoverage['appzone.js'][34]++;
   return false;
 });
-_$jscoverage['appzone.js'][45]++;
-exports.load = (function (host, appId, pass, retryInterval) {
-  _$jscoverage['appzone.js'][46]++;
-  if (! retryInterval) {
-    _$jscoverage['appzone.js'][47]++;
-    retryInterval = 30000;
-  }
-  _$jscoverage['appzone.js'][49]++;
-  return new Appzone(host, appId, pass, retryInterval);
+_$jscoverage['appzone.js'][37]++;
+exports.sender = (function (url, appId, password, retryInterval, retryLimit) {
+  _$jscoverage['appzone.js'][38]++;
+  return require("./sender").load(url, appId, password, retryInterval, retryLimit);
 });
-_$jscoverage['appzone.js'][52]++;
-function Appzone(host, appId, pass, retryInterval) {
-  _$jscoverage['appzone.js'][54]++;
-  this.sendMessage = (function (address, message, callback, retry) {
-  _$jscoverage['appzone.js'][55]++;
-  var tries = 0;
-  _$jscoverage['appzone.js'][56]++;
-  if (retry) {
-    _$jscoverage['appzone.js'][57]++;
-    sendMessageRetry("tel:" + address, message, callback, 1);
-  }
-  else {
-    _$jscoverage['appzone.js'][59]++;
-    sendMessage_("tel:" + address, message, callback);
-  }
+_$jscoverage['appzone.js'][41]++;
+exports.receiver = (function (port) {
+  _$jscoverage['appzone.js'][42]++;
+  return require("./receiver").load(port);
 });
-  _$jscoverage['appzone.js'][63]++;
-  this.broadcast = (function (message, callback, retry) {
-  _$jscoverage['appzone.js'][65]++;
-  if (retry) {
-    _$jscoverage['appzone.js'][66]++;
-    sendMessageRetry("list:registered", message, callback, 1);
-  }
-  else {
-    _$jscoverage['appzone.js'][68]++;
-    sendMessage_("list:registered", message, callback);
-  }
-});
-  _$jscoverage['appzone.js'][72]++;
-  var sendMessageRetry = (function (address, message, callback, count) {
-  _$jscoverage['appzone.js'][74]++;
-  var retryCodes = ["SBL-SMS-MT-5000", "SBL-SMS-MT-5008", "SBL-SMS-MT-5001", "SBL-SMS-MT-5004", "CORE-SMS-MT-4049", "CORE-SMS-MT-4030", "CORE-SMS-MT-4016"];
-  _$jscoverage['appzone.js'][78]++;
-  if (count > 5) {
-    _$jscoverage['appzone.js'][79]++;
-    console.error("maximum retry limit exeeded when sending message to: " + host + " for:" + address);
-  }
-  else {
-    _$jscoverage['appzone.js'][81]++;
-    sendMessage_(address, message, (function (status) {
-  _$jscoverage['appzone.js'][83]++;
-  if (! status || retryCodes.contains(status.status_code)) {
-    _$jscoverage['appzone.js'][84]++;
-    console.log("retrying for: " + count + " of message: " + message + " to address:" + address);
-    _$jscoverage['appzone.js'][85]++;
-    setTimeout((function () {
-  _$jscoverage['appzone.js'][86]++;
-  sendMessageRetry(address, message, callback, count + 1);
-}), retryInterval);
-  }
-  else {
-    _$jscoverage['appzone.js'][89]++;
-    if (callback) {
-      _$jscoverage['appzone.js'][89]++;
-      callback(status);
-    }
-  }
-}));
-  }
-});
-  _$jscoverage['appzone.js'][96]++;
-  var sendMessage_ = (function (address, message, callback) {
-  _$jscoverage['appzone.js'][98]++;
-  rest.post(host, {username: appId, password: pass, data: {version: "1.0", address: address, message: message}}).on("complete", (function (data, response) {
-  _$jscoverage['appzone.js'][108]++;
-  if (response.statusCode == 200) {
-    _$jscoverage['appzone.js'][109]++;
-    var pasedData = parseXML(data, (function (status) {
-  _$jscoverage['appzone.js'][110]++;
-  if (callback) {
-    _$jscoverage['appzone.js'][110]++;
-    callback(status);
-  }
-}));
-    _$jscoverage['appzone.js'][112]++;
-    console.info("message send to address: " + address);
-  }
-  else {
-    _$jscoverage['appzone.js'][114]++;
-    console.error("Appzone Sending message failed with statusCode: " + response.statusCode);
-    _$jscoverage['appzone.js'][115]++;
-    if (callback) {
-      _$jscoverage['appzone.js'][115]++;
-      callback(null);
-    }
-  }
-})).on("error", (function (err, err2) {
-  _$jscoverage['appzone.js'][118]++;
-  console.error("Something wrong with the appzone host:" + host);
-  _$jscoverage['appzone.js'][119]++;
-  console.error(err);
-  _$jscoverage['appzone.js'][120]++;
-  console.error(err2);
-}));
-});
-  _$jscoverage['appzone.js'][124]++;
-  var parseXML = (function (data, callback) {
-  _$jscoverage['appzone.js'][125]++;
-  var p = new xml2js.Parser();
-  _$jscoverage['appzone.js'][126]++;
-  p.addListener("end", (function (obj) {
-  _$jscoverage['appzone.js'][127]++;
-  callback(obj);
-}));
-  _$jscoverage['appzone.js'][129]++;
-  p.parseString(data);
-});
-  _$jscoverage['appzone.js'][141]++;
-  this.receive = (function (port, callback) {
-  _$jscoverage['appzone.js'][142]++;
-  var $ = qbox.create();
-  _$jscoverage['appzone.js'][143]++;
-  var app = connect.createServer(connect.bodyParser(), receiveLogic);
-  _$jscoverage['appzone.js'][147]++;
-  app.listen(port, (function () {
-  _$jscoverage['appzone.js'][148]++;
-  $.start();
-}));
-  _$jscoverage['appzone.js'][151]++;
-  function receiveLogic(req, res) {
-    _$jscoverage['appzone.js'][153]++;
-    if (req.method.toUpperCase() == "POST") {
-      _$jscoverage['appzone.js'][154]++;
-      var message = {version: req.body.version, address: req.body.address, message: req.body.message, correlator: req.body.correlator};
-      _$jscoverage['appzone.js'][161]++;
-      if (requestCheck(message)) {
-        _$jscoverage['appzone.js'][162]++;
-        console.info("receiving SMS from appzone: " + JSON.stringify(message));
-        _$jscoverage['appzone.js'][163]++;
-        callback(message);
-        _$jscoverage['appzone.js'][165]++;
-        res.writeHead(200, {"Content-Type": "text/plain"});
-        _$jscoverage['appzone.js'][166]++;
-        res.end("");
-      }
-      else {
-        _$jscoverage['appzone.js'][168]++;
-        console.info("few of required parameters are not exists. current requets: " + JSON.stringify(message));
-        _$jscoverage['appzone.js'][169]++;
-        res.writeHead(404, {"Content-Type": "text/plain"});
-        _$jscoverage['appzone.js'][170]++;
-        res.end("Please provide all the required paramerers");
-      }
-    }
-    else {
-      _$jscoverage['appzone.js'][173]++;
-      console.info("unsupported method: " + req.method + " received");
-      _$jscoverage['appzone.js'][174]++;
-      res.writeHead(404, {"Content-Type": "text/plain"});
-      _$jscoverage['appzone.js'][175]++;
-      res.end("Please provide all the required paramerers");
-    }
-}
-  _$jscoverage['appzone.js'][183]++;
-  function requestCheck(message) {
-    _$jscoverage['appzone.js'][184]++;
-    for (key in message) {
-      _$jscoverage['appzone.js'][185]++;
-      if (! message[key]) {
-        _$jscoverage['appzone.js'][186]++;
-        return false;
-      }
-}
-    _$jscoverage['appzone.js'][190]++;
-    return true;
-}
-  _$jscoverage['appzone.js'][193]++;
-  return ({close: (function () {
-  _$jscoverage['appzone.js'][195]++;
-  $.ready((function () {
-  _$jscoverage['appzone.js'][196]++;
-  app.close();
-}));
-})});
-});
-}
-_$jscoverage['appzone.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","var rest = require(\"restler\");","var xml2js = require(\"xml2js-expat\");","var connect = require('connect');","var qbox = require('qbox');","","Array.prototype.contains = function(obj) {","\t  var i = this.length;","\t  while (i--) {","\t    if (this[i] === obj) {","\t      return true;","\t    }","\t  }","\t  return false;","};","","/**"," * @param retryInterval - Interval between the retryInterval "," */","exports.load = function(host, appId, pass, retryInterval) {","\tif(!retryInterval) {","\t\tretryInterval = 30000;","\t}","\treturn new Appzone(host, appId, pass, retryInterval);","};","","function Appzone(host, appId, pass, retryInterval) {","\t","\tthis.sendMessage = function(address, message, callback, retry) {","\t\tvar tries = 0;","\t\tif(retry) {","\t\t\tsendMessageRetry(\"tel:\" + address, message, callback, 1);","\t\t} else {","\t\t\tsendMessage_(\"tel:\" + address, message, callback);","\t\t}","\t};","\t","\tthis.broadcast = function(message, callback, retry) {","\t\t","\t\tif(retry) {","\t\t\tsendMessageRetry(\"list:registered\", message, callback, 1);","\t\t} else {","\t\t\tsendMessage_(\"list:registered\", message, callback);","\t\t}","\t};","\t","\tvar sendMessageRetry = function(address, message, callback, count) {","\t\t","\t\tvar retryCodes = [\"SBL-SMS-MT-5000\", \"SBL-SMS-MT-5008\", \"SBL-SMS-MT-5001\",","\t\t  \t\t\t\t\"SBL-SMS-MT-5004\", \"CORE-SMS-MT-4049\", \"CORE-SMS-MT-4030\", ","\t\t  \t\t\t\t\"CORE-SMS-MT-4016\"];","\t\t","\t\tif(count&gt; 5) {","\t\t\tconsole.error(\"maximum retry limit exeeded when sending message to: \" + host + \" for:\" + address);","\t\t} else {","\t\t\tsendMessage_(address, message, function(status) {","\t\t\t\t","\t\t\t\tif(!status || retryCodes.contains(status.status_code)) {","\t\t\t\t\tconsole.log(\"retrying for: \" + count + \" of message: \" + message + \" to address:\" + address);","\t\t\t\t\tsetTimeout(function() {","\t\t\t\t\t\tsendMessageRetry(address, message, callback, count + 1);","\t\t\t\t\t}, retryInterval);","\t\t\t\t} else {","\t\t\t\t\tif(callback) callback(status);","\t\t\t\t}","\t\t\t});","\t\t}","\t\t","\t};","\t","\tvar sendMessage_ = function(address, message, callback) {","","\t\trest.post(host, {","\t\t\tusername: appId,","\t\t\tpassword: pass,","\t\t\tdata: {","\t\t\t\tversion: \"1.0\",","\t\t\t\taddress: address,","\t\t\t\tmessage: message","\t\t\t}","\t\t}).on(\"complete\", function(data, response) {","\t\t\t","\t\t\tif(response.statusCode == 200) {","\t\t\t\tvar pasedData = parseXML(data, function(status) {","\t\t\t\t\tif(callback) callback(status);","\t\t\t\t});","\t\t\t\tconsole.info(\"message send to address: \" + address);","\t\t\t} else {","\t\t\t\tconsole.error(\"Appzone Sending message failed with statusCode: \" + response.statusCode);","\t\t\t\tif(callback) callback(null);","\t\t\t}","\t\t}).on(\"error\", function(err, err2) {","\t\t\tconsole.error(\"Something wrong with the appzone host:\" + host);","\t\t\tconsole.error(err);","\t\t\tconsole.error(err2);","\t\t});","\t};","\t","\tvar parseXML = function(data, callback) {","\t\tvar p = new xml2js.Parser();","\t\tp.addListener(\"end\", function(obj) {","\t\t\tcallback(obj);","\t\t});","\t\tp.parseString(data);","\t};","\t","\t/**","\t * Receive for SMS on a given port and calls the callback with following object","\t * {","\t * \t\tversion: \"1.0\",","\t * \t\taddress: \"2324324243234\",","\t * \t\tmessage: \"the message content\",","\t * \t\tcorrelator:\t\"34343434343\"","\t * }","\t */","\tthis.receive = function(port, callback) {","\t\tvar $ = qbox.create();","\t\tvar app = connect.createServer(","\t\t\t\tconnect.bodyParser(), ","\t\t\t    receiveLogic","\t\t);","\t\tapp.listen(port, function() {","\t\t\t$.start();","\t\t});","\t\t","\t\tfunction receiveLogic(req, res) {","","\t\t\tif(req.method.toUpperCase() == \"POST\") {","\t\t\t\tvar message = {","\t\t\t\t    \tversion: req.body.version,","\t\t\t\t    \taddress: req.body.address,","\t\t\t\t    \tmessage: req.body.message,","\t\t\t\t    \tcorrelator: req.body.correlator","\t\t\t\t    };","\t\t\t\t    ","\t\t\t\t\tif(requestCheck(message)) {","\t\t\t\t\t\tconsole.info(\"receiving SMS from appzone: \" + JSON.stringify(message));","\t\t\t\t\t    callback(message);","","\t\t\t\t\t    res.writeHead(200, {\"Content-Type\": \"text/plain\"});","\t\t\t\t\t    res.end(\"\");","\t\t\t\t\t} else {","\t\t\t\t\t\tconsole.info(\"few of required parameters are not exists. current requets: \" + JSON.stringify(message));","\t\t\t\t\t\tres.writeHead(404, {\"Content-Type\": \"text/plain\"});","\t\t\t\t\t    res.end(\"Please provide all the required paramerers\");","\t\t\t\t\t}","\t\t\t} else {","\t\t\t\tconsole.info(\"unsupported method: \" + req.method + \" received\");","\t\t\t\tres.writeHead(404, {\"Content-Type\": \"text/plain\"});","\t\t\t    res.end(\"Please provide all the required paramerers\");","\t\t\t}","\t\t\t","\t\t}","\t\t","\t\t/**","\t\t * Check the request for all the required parameters","\t\t */","\t\tfunction requestCheck(message) {","\t\t\tfor(key in message) {","\t\t\t\tif(!message[key]) {","\t\t\t\t\treturn false;","\t\t\t\t}","\t\t\t}","\t\t\t","\t\t\treturn true;","\t\t}","\t","\t\treturn {","\t\t\tclose: function() {","\t\t\t\t$.ready(function() {","\t\t\t\t\tapp.close();","\t\t\t\t});","\t\t\t}","\t\t};","\t};","}"];
+_$jscoverage['appzone.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","Array.prototype.contains = function(obj) {","\t  var i = this.length;","\t  while (i--) {","\t    if (this[i] === obj) {","\t      return true;","\t    }","\t  }","\t  return false;","};","","exports.sender = function(url, appId, password, retryInterval, retryLimit) {","\treturn require('./sender').load(url, appId, password, retryInterval, retryLimit);","};","","exports.receiver = function(port) {","\treturn require('./receiver').load(port);","};"];
