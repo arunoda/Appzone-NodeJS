@@ -74,7 +74,7 @@ exports.testsSendMessageLessParamaters = function() {
 			data: smsMessage
 		}).on("complete", function(data, response) {
 			receiver.close();
-			assert.equal(200, response.statusCode);
+			assert.equal(404, response.statusCode);
 		}).on("error", function(err) {
 		});
 	}, 1000);
