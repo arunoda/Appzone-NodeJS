@@ -8,10 +8,10 @@ if (! _$jscoverage['appzone.js']) {
   _$jscoverage['appzone.js'][30] = 0;
   _$jscoverage['appzone.js'][31] = 0;
   _$jscoverage['appzone.js'][34] = 0;
-  _$jscoverage['appzone.js'][37] = 0;
-  _$jscoverage['appzone.js'][38] = 0;
-  _$jscoverage['appzone.js'][41] = 0;
-  _$jscoverage['appzone.js'][42] = 0;
+  _$jscoverage['appzone.js'][48] = 0;
+  _$jscoverage['appzone.js'][49] = 0;
+  _$jscoverage['appzone.js'][57] = 0;
+  _$jscoverage['appzone.js'][58] = 0;
 }
 _$jscoverage['appzone.js'][27]++;
 Array.prototype.contains = (function (obj) {
@@ -28,14 +28,14 @@ Array.prototype.contains = (function (obj) {
   _$jscoverage['appzone.js'][34]++;
   return false;
 });
-_$jscoverage['appzone.js'][37]++;
+_$jscoverage['appzone.js'][48]++;
 exports.sender = (function (url, appId, password, retryInterval, retryLimit) {
-  _$jscoverage['appzone.js'][38]++;
+  _$jscoverage['appzone.js'][49]++;
   return require("./sender").load(url, appId, password, retryInterval, retryLimit);
 });
-_$jscoverage['appzone.js'][41]++;
+_$jscoverage['appzone.js'][57]++;
 exports.receiver = (function (port) {
-  _$jscoverage['appzone.js'][42]++;
+  _$jscoverage['appzone.js'][58]++;
   return require("./receiver").load(port);
 });
-_$jscoverage['appzone.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","Array.prototype.contains = function(obj) {","\t  var i = this.length;","\t  while (i--) {","\t    if (this[i] === obj) {","\t      return true;","\t    }","\t  }","\t  return false;","};","","exports.sender = function(url, appId, password, retryInterval, retryLimit) {","\treturn require('./sender').load(url, appId, password, retryInterval, retryLimit);","};","","exports.receiver = function(port) {","\treturn require('./receiver').load(port);","};"];
+_$jscoverage['appzone.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","Array.prototype.contains = function(obj) {","\t  var i = this.length;","\t  while (i--) {","\t    if (this[i] === obj) {","\t      return true;","\t    }","\t  }","\t  return false;","};","","/**"," * Returns an instance of Appzone Sender "," * "," * @param url - url of the Appzone Server eg:- http://localhost:8000"," * @param appId - appId for appzone"," * @param password - password for appzone"," * @param retryInterval (optional) - the Interval between retry message sending "," * \tif a message failed to send correctly. Default is 30 seconds."," * @param retryLimit (optional)- no retries before give up sending the message. "," * \tDefault is 5"," */","exports.sender = function(url, appId, password, retryInterval, retryLimit) {","\treturn require('./sender').load(url, appId, password, retryInterval, retryLimit);","};","","/**"," * Returns an instance of Appzone Receiver "," * "," * @param port - port which listen for messages from Appzone"," */","exports.receiver = function(port) {","\treturn require('./receiver').load(port);","};"];

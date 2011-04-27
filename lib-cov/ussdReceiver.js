@@ -4,133 +4,103 @@ if (! _$jscoverage['ussdReceiver.js']) {
   _$jscoverage['ussdReceiver.js'] = [];
   _$jscoverage['ussdReceiver.js'][27] = 0;
   _$jscoverage['ussdReceiver.js'][33] = 0;
-  _$jscoverage['ussdReceiver.js'][37] = 0;
+  _$jscoverage['ussdReceiver.js'][35] = 0;
+  _$jscoverage['ussdReceiver.js'][36] = 0;
   _$jscoverage['ussdReceiver.js'][38] = 0;
-  _$jscoverage['ussdReceiver.js'][39] = 0;
+  _$jscoverage['ussdReceiver.js'][40] = 0;
   _$jscoverage['ussdReceiver.js'][41] = 0;
   _$jscoverage['ussdReceiver.js'][43] = 0;
   _$jscoverage['ussdReceiver.js'][44] = 0;
   _$jscoverage['ussdReceiver.js'][46] = 0;
-  _$jscoverage['ussdReceiver.js'][47] = 0;
   _$jscoverage['ussdReceiver.js'][49] = 0;
-  _$jscoverage['ussdReceiver.js'][52] = 0;
-  _$jscoverage['ussdReceiver.js'][53] = 0;
+  _$jscoverage['ussdReceiver.js'][50] = 0;
+  _$jscoverage['ussdReceiver.js'][51] = 0;
   _$jscoverage['ussdReceiver.js'][54] = 0;
-  _$jscoverage['ussdReceiver.js'][57] = 0;
-  _$jscoverage['ussdReceiver.js'][59] = 0;
+  _$jscoverage['ussdReceiver.js'][56] = 0;
+  _$jscoverage['ussdReceiver.js'][63] = 0;
+  _$jscoverage['ussdReceiver.js'][65] = 0;
   _$jscoverage['ussdReceiver.js'][66] = 0;
-  _$jscoverage['ussdReceiver.js'][68] = 0;
-  _$jscoverage['ussdReceiver.js'][69] = 0;
+  _$jscoverage['ussdReceiver.js'][67] = 0;
   _$jscoverage['ussdReceiver.js'][70] = 0;
-  _$jscoverage['ussdReceiver.js'][73] = 0;
-  _$jscoverage['ussdReceiver.js'][75] = 0;
+  _$jscoverage['ussdReceiver.js'][72] = 0;
+  _$jscoverage['ussdReceiver.js'][79] = 0;
+  _$jscoverage['ussdReceiver.js'][81] = 0;
   _$jscoverage['ussdReceiver.js'][82] = 0;
-  _$jscoverage['ussdReceiver.js'][84] = 0;
-  _$jscoverage['ussdReceiver.js'][85] = 0;
+  _$jscoverage['ussdReceiver.js'][83] = 0;
   _$jscoverage['ussdReceiver.js'][86] = 0;
+  _$jscoverage['ussdReceiver.js'][88] = 0;
   _$jscoverage['ussdReceiver.js'][89] = 0;
-  _$jscoverage['ussdReceiver.js'][91] = 0;
-  _$jscoverage['ussdReceiver.js'][92] = 0;
-  _$jscoverage['ussdReceiver.js'][93] = 0;
-  _$jscoverage['ussdReceiver.js'][102] = 0;
-  _$jscoverage['ussdReceiver.js'][104] = 0;
-  _$jscoverage['ussdReceiver.js'][105] = 0;
-  _$jscoverage['ussdReceiver.js'][107] = 0;
-  _$jscoverage['ussdReceiver.js'][108] = 0;
-  _$jscoverage['ussdReceiver.js'][109] = 0;
-  _$jscoverage['ussdReceiver.js'][112] = 0;
-  _$jscoverage['ussdReceiver.js'][115] = 0;
+  _$jscoverage['ussdReceiver.js'][90] = 0;
 }
 _$jscoverage['ussdReceiver.js'][27]++;
-var TYPE = {USSD_MESSAGE: "x-ussd-message", USSD_TERMINATE: "x-ussd-terminate-message", USSD_ALIVE: "x-ussd-alive-message"};
+var TYPE = {USSD_MESSAGE: "X-USSD-Message", USSD_TERMINATE: "X-USSD-Terminate-Message", USSD_ALIVE: "X-USSD-Alive-Message"};
 _$jscoverage['ussdReceiver.js'][33]++;
 exports.handle = (function (req, res, events) {
-  _$jscoverage['ussdReceiver.js'][37]++;
-  req.headers = deepLowerCase(req.headers);
-  _$jscoverage['ussdReceiver.js'][38]++;
+  _$jscoverage['ussdReceiver.js'][35]++;
   var messageType = req.headers["x-message-type"];
-  _$jscoverage['ussdReceiver.js'][39]++;
+  _$jscoverage['ussdReceiver.js'][36]++;
   console.log("getting ussd message type: " + messageType);
-  _$jscoverage['ussdReceiver.js'][41]++;
+  _$jscoverage['ussdReceiver.js'][38]++;
   if (messageType == TYPE.USSD_MESSAGE) {
-    _$jscoverage['ussdReceiver.js'][43]++;
+    _$jscoverage['ussdReceiver.js'][40]++;
     handleNormalUssdMessage();
   }
   else {
-    _$jscoverage['ussdReceiver.js'][44]++;
+    _$jscoverage['ussdReceiver.js'][41]++;
     if (messageType == TYPE.USSD_TERMINATE) {
-      _$jscoverage['ussdReceiver.js'][46]++;
+      _$jscoverage['ussdReceiver.js'][43]++;
       handleTerminateMessage();
     }
     else {
-      _$jscoverage['ussdReceiver.js'][47]++;
+      _$jscoverage['ussdReceiver.js'][44]++;
       if (messageType == TYPE.USSD_ALIVE) {
-        _$jscoverage['ussdReceiver.js'][49]++;
+        _$jscoverage['ussdReceiver.js'][46]++;
         handleAliveMesssage();
       }
       else {
-        _$jscoverage['ussdReceiver.js'][52]++;
+        _$jscoverage['ussdReceiver.js'][49]++;
         console.log("Unidentified USSD message type: " + messageType);
-        _$jscoverage['ussdReceiver.js'][53]++;
+        _$jscoverage['ussdReceiver.js'][50]++;
         res.writeHead(404);
-        _$jscoverage['ussdReceiver.js'][54]++;
+        _$jscoverage['ussdReceiver.js'][51]++;
         res.end();
       }
     }
   }
-  _$jscoverage['ussdReceiver.js'][57]++;
+  _$jscoverage['ussdReceiver.js'][54]++;
   function handleNormalUssdMessage() {
-    _$jscoverage['ussdReceiver.js'][59]++;
+    _$jscoverage['ussdReceiver.js'][56]++;
     var ussd = {address: req.body.address, conversationId: req.headers["x-requested-conversation-id"], message: req.body.message, correlationId: req.body.correlationId, version: req.headers["x-requested-version"]};
-    _$jscoverage['ussdReceiver.js'][66]++;
+    _$jscoverage['ussdReceiver.js'][63]++;
     console.log("handling normal ussd message as: " + JSON.stringify(ussd));
-    _$jscoverage['ussdReceiver.js'][68]++;
-    events.emit("ussdMessage", ussd);
-    _$jscoverage['ussdReceiver.js'][69]++;
+    _$jscoverage['ussdReceiver.js'][65]++;
+    events.emit("ussd", ussd);
+    _$jscoverage['ussdReceiver.js'][66]++;
     res.writeHead(200);
-    _$jscoverage['ussdReceiver.js'][70]++;
+    _$jscoverage['ussdReceiver.js'][67]++;
     res.end("");
 }
-  _$jscoverage['ussdReceiver.js'][73]++;
+  _$jscoverage['ussdReceiver.js'][70]++;
   function handleTerminateMessage() {
-    _$jscoverage['ussdReceiver.js'][75]++;
+    _$jscoverage['ussdReceiver.js'][72]++;
     var ussd = {address: req.body.address, conversationId: req.headers["x-requested-conversation-id"], correlationId: req.body.correlationId, version: req.headers["x-requested-version"]};
-    _$jscoverage['ussdReceiver.js'][82]++;
+    _$jscoverage['ussdReceiver.js'][79]++;
     console.log("handling terminate ussd message as: " + JSON.stringify(ussd));
-    _$jscoverage['ussdReceiver.js'][84]++;
+    _$jscoverage['ussdReceiver.js'][81]++;
     events.emit("ussdTerminate", ussd);
-    _$jscoverage['ussdReceiver.js'][85]++;
+    _$jscoverage['ussdReceiver.js'][82]++;
     res.writeHead(200);
-    _$jscoverage['ussdReceiver.js'][86]++;
+    _$jscoverage['ussdReceiver.js'][83]++;
     res.end("");
 }
-  _$jscoverage['ussdReceiver.js'][89]++;
+  _$jscoverage['ussdReceiver.js'][86]++;
   function handleAliveMesssage() {
-    _$jscoverage['ussdReceiver.js'][91]++;
+    _$jscoverage['ussdReceiver.js'][88]++;
     console.log("handling ussd alive message");
-    _$jscoverage['ussdReceiver.js'][92]++;
+    _$jscoverage['ussdReceiver.js'][89]++;
     res.writeHead(202);
-    _$jscoverage['ussdReceiver.js'][93]++;
+    _$jscoverage['ussdReceiver.js'][90]++;
     res.end("");
 }
 });
-_$jscoverage['ussdReceiver.js'][102]++;
-function deepLowerCase(obj) {
-  _$jscoverage['ussdReceiver.js'][104]++;
-  var lowered = {};
-  _$jscoverage['ussdReceiver.js'][105]++;
-  for (var key in obj) {
-    _$jscoverage['ussdReceiver.js'][107]++;
-    var value = obj[key].toLowerCase();
-    _$jscoverage['ussdReceiver.js'][108]++;
-    if (typeof value == "string") {
-      _$jscoverage['ussdReceiver.js'][109]++;
-      value = value.toLowerCase();
-    }
-    _$jscoverage['ussdReceiver.js'][112]++;
-    lowered[key.toLowerCase()] = value;
-}
-  _$jscoverage['ussdReceiver.js'][115]++;
-  return lowered;
-}
-_$jscoverage['ussdReceiver.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright, appId, password notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","var TYPE = {","\t\tUSSD_MESSAGE: \"x-ussd-message\",","\t\tUSSD_TERMINATE: \"x-ussd-terminate-message\",","\t\tUSSD_ALIVE: \"x-ussd-alive-message\"","};","","exports.handle = function(req, res, events) {","\t","\t//convert to lower case of the all the header keys and values","\t//in order to prevent from API unstability ","\treq.headers = deepLowerCase(req.headers);","\tvar messageType = req.headers['x-message-type'];","\tconsole.log(\"getting ussd message type: \" + messageType);","\t","\tif(messageType == TYPE.USSD_MESSAGE) {","\t\t","\t\thandleNormalUssdMessage();","\t} else if(messageType == TYPE.USSD_TERMINATE) {","\t\t","\t\thandleTerminateMessage();","\t} else if(messageType == TYPE.USSD_ALIVE) {","\t\t ","\t\thandleAliveMesssage();","\t} else {","\t\t","\t\tconsole.log(\"Unidentified USSD message type: \" + messageType);","\t\tres.writeHead(404);","\t\tres.end();","\t}","\t","\tfunction handleNormalUssdMessage() {","\t\t","\t\tvar ussd = {","\t\t\t\taddress: req.body.address,","\t\t\t\tconversationId: req.headers['x-requested-conversation-id'],","\t\t\t\tmessage: req.body.message,","\t\t\t\tcorrelationId: req.body.correlationId,","\t\t\t\tversion: req.headers['x-requested-version']","\t\t};","\t\tconsole.log(\"handling normal ussd message as: \" + JSON.stringify(ussd));","\t\t","\t\tevents.emit(\"ussdMessage\", ussd);","\t\tres.writeHead(200);","\t    res.end(\"\");","\t}","\t","\tfunction handleTerminateMessage() {","\t\t","\t\tvar ussd = {","\t\t\t\taddress: req.body.address,","\t\t\t\tconversationId: req.headers['x-requested-conversation-id'],","\t\t\t\tcorrelationId: req.body.correlationId,","\t\t\t\tversion: req.headers['x-requested-version']","\t\t};","\t\t","\t\tconsole.log(\"handling terminate ussd message as: \" + JSON.stringify(ussd));","\t\t","\t\tevents.emit(\"ussdTerminate\", ussd);","\t\tres.writeHead(200);","\t    res.end(\"\");","\t}","\t","\tfunction handleAliveMesssage() {","\t\t","\t\tconsole.log(\"handling ussd alive message\");","\t\tres.writeHead(202);","\t    res.end(\"\");","\t}","};","","/**"," * convert all the keys and values into lower case "," * and return it"," * @param obj"," */","function deepLowerCase(obj) {","\t","\tvar lowered = {};","\tfor(var key in obj) {","\t\t","\t\tvar value = obj[key].toLowerCase();","\t\tif(typeof(value) == 'string') {","\t\t\tvalue = value.toLowerCase();","\t\t}","\t\t","\t\tlowered[key.toLowerCase()] = value;","\t}","\t","\treturn lowered;","}"];
+_$jscoverage['ussdReceiver.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","var TYPE = {","\t\tUSSD_MESSAGE: \"X-USSD-Message\",","\t\tUSSD_TERMINATE: \"X-USSD-Terminate-Message\",","\t\tUSSD_ALIVE: \"X-USSD-Alive-Message\"","};","","exports.handle = function(req, res, events) {","\t","\tvar messageType = req.headers['x-message-type'];","\tconsole.log(\"getting ussd message type: \" + messageType);","\t","\tif(messageType == TYPE.USSD_MESSAGE) {","\t\t","\t\thandleNormalUssdMessage();","\t} else if(messageType == TYPE.USSD_TERMINATE) {","\t\t","\t\thandleTerminateMessage();","\t} else if(messageType == TYPE.USSD_ALIVE) {","\t\t ","\t\thandleAliveMesssage();","\t} else {","\t\t","\t\tconsole.log(\"Unidentified USSD message type: \" + messageType);","\t\tres.writeHead(404);","\t\tres.end();","\t}","\t","\tfunction handleNormalUssdMessage() {","\t\t","\t\tvar ussd = {","\t\t\t\taddress: req.body.address,","\t\t\t\tconversationId: req.headers['x-requested-conversation-id'],","\t\t\t\tmessage: req.body.message,","\t\t\t\tcorrelationId: req.body.correlationId,","\t\t\t\tversion: req.headers['x-requested-version']","\t\t};","\t\tconsole.log(\"handling normal ussd message as: \" + JSON.stringify(ussd));","\t\t","\t\tevents.emit(\"ussd\", ussd);","\t\tres.writeHead(200);","\t    res.end(\"\");","\t}","\t","\tfunction handleTerminateMessage() {","\t\t","\t\tvar ussd = {","\t\t\t\taddress: req.body.address,","\t\t\t\tconversationId: req.headers['x-requested-conversation-id'],","\t\t\t\tcorrelationId: req.body.correlationId,","\t\t\t\tversion: req.headers['x-requested-version']","\t\t};","\t\t","\t\tconsole.log(\"handling terminate ussd message as: \" + JSON.stringify(ussd));","\t\t","\t\tevents.emit(\"ussdTerminate\", ussd);","\t\tres.writeHead(200);","\t    res.end(\"\");","\t}","\t","\tfunction handleAliveMesssage() {","\t\t","\t\tconsole.log(\"handling ussd alive message\");","\t\tres.writeHead(202);","\t    res.end(\"\");","\t}","};"];

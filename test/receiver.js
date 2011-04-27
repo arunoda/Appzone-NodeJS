@@ -1,6 +1,6 @@
 var assert = require("assert");
 var rest = require("restler");
-var appzone = require('../lib-cov/appzone');
+var appzone = require('appzone');
 
 exports.testsSendMessage = function() {
 	
