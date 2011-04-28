@@ -8,32 +8,32 @@ if (! _$jscoverage['receiver.js']) {
   _$jscoverage['receiver.js'][32] = 0;
   _$jscoverage['receiver.js'][34] = 0;
   _$jscoverage['receiver.js'][35] = 0;
-  _$jscoverage['receiver.js'][38] = 0;
-  _$jscoverage['receiver.js'][40] = 0;
-  _$jscoverage['receiver.js'][41] = 0;
-  _$jscoverage['receiver.js'][42] = 0;
-  _$jscoverage['receiver.js'][44] = 0;
+  _$jscoverage['receiver.js'][43] = 0;
   _$jscoverage['receiver.js'][45] = 0;
+  _$jscoverage['receiver.js'][46] = 0;
+  _$jscoverage['receiver.js'][47] = 0;
+  _$jscoverage['receiver.js'][49] = 0;
   _$jscoverage['receiver.js'][50] = 0;
-  _$jscoverage['receiver.js'][51] = 0;
-  _$jscoverage['receiver.js'][54] = 0;
+  _$jscoverage['receiver.js'][55] = 0;
   _$jscoverage['receiver.js'][56] = 0;
-  _$jscoverage['receiver.js'][58] = 0;
   _$jscoverage['receiver.js'][59] = 0;
   _$jscoverage['receiver.js'][61] = 0;
-  _$jscoverage['receiver.js'][65] = 0;
+  _$jscoverage['receiver.js'][63] = 0;
+  _$jscoverage['receiver.js'][64] = 0;
   _$jscoverage['receiver.js'][66] = 0;
-  _$jscoverage['receiver.js'][67] = 0;
-  _$jscoverage['receiver.js'][74] = 0;
-  _$jscoverage['receiver.js'][75] = 0;
-  _$jscoverage['receiver.js'][78] = 0;
-  _$jscoverage['receiver.js'][79] = 0;
-  _$jscoverage['receiver.js'][82] = 0;
-  _$jscoverage['receiver.js'][83] = 0;
-  _$jscoverage['receiver.js'][86] = 0;
+  _$jscoverage['receiver.js'][70] = 0;
+  _$jscoverage['receiver.js'][71] = 0;
+  _$jscoverage['receiver.js'][72] = 0;
+  _$jscoverage['receiver.js'][87] = 0;
   _$jscoverage['receiver.js'][88] = 0;
-  _$jscoverage['receiver.js'][89] = 0;
-  _$jscoverage['receiver.js'][90] = 0;
+  _$jscoverage['receiver.js'][100] = 0;
+  _$jscoverage['receiver.js'][101] = 0;
+  _$jscoverage['receiver.js'][114] = 0;
+  _$jscoverage['receiver.js'][115] = 0;
+  _$jscoverage['receiver.js'][124] = 0;
+  _$jscoverage['receiver.js'][126] = 0;
+  _$jscoverage['receiver.js'][127] = 0;
+  _$jscoverage['receiver.js'][128] = 0;
 }
 _$jscoverage['receiver.js'][27]++;
 var connect = require("connect");
@@ -48,73 +48,73 @@ exports.load = (function (port) {
   _$jscoverage['receiver.js'][35]++;
   return new Receiver(port);
 });
-_$jscoverage['receiver.js'][38]++;
+_$jscoverage['receiver.js'][43]++;
 function Receiver(port) {
-  _$jscoverage['receiver.js'][40]++;
-  var EventEmitter = require("events").EventEmitter;
-  _$jscoverage['receiver.js'][41]++;
-  var events = new EventEmitter();
-  _$jscoverage['receiver.js'][42]++;
-  console.log(events);
-  _$jscoverage['receiver.js'][44]++;
-  var $ = qbox.create();
   _$jscoverage['receiver.js'][45]++;
-  var app = connect.createServer(connect.logger(), connect.bodyParser(), receiveLogic);
+  var EventEmitter = require("events").EventEmitter;
+  _$jscoverage['receiver.js'][46]++;
+  var events = new EventEmitter();
+  _$jscoverage['receiver.js'][47]++;
+  console.log(events);
+  _$jscoverage['receiver.js'][49]++;
+  var $ = qbox.create();
   _$jscoverage['receiver.js'][50]++;
+  var app = connect.createServer(connect.logger(), connect.bodyParser(), receiveLogic);
+  _$jscoverage['receiver.js'][55]++;
   app.listen(port, (function () {
-  _$jscoverage['receiver.js'][51]++;
+  _$jscoverage['receiver.js'][56]++;
   $.start();
 }));
-  _$jscoverage['receiver.js'][54]++;
+  _$jscoverage['receiver.js'][59]++;
   function receiveLogic(req, res) {
-    _$jscoverage['receiver.js'][56]++;
+    _$jscoverage['receiver.js'][61]++;
     if (req.method.toUpperCase() == "POST") {
-      _$jscoverage['receiver.js'][58]++;
+      _$jscoverage['receiver.js'][63]++;
       if (/^\/ussd/i.exec(req.url)) {
-        _$jscoverage['receiver.js'][59]++;
+        _$jscoverage['receiver.js'][64]++;
         ussd.handle(req, res, events);
       }
       else {
-        _$jscoverage['receiver.js'][61]++;
+        _$jscoverage['receiver.js'][66]++;
         sms.handle(req, res, events);
       }
     }
     else {
-      _$jscoverage['receiver.js'][65]++;
+      _$jscoverage['receiver.js'][70]++;
       console.info("unsupported method: " + req.method + " received");
-      _$jscoverage['receiver.js'][66]++;
+      _$jscoverage['receiver.js'][71]++;
       res.writeHead(404, {"Content-Type": "text/plain"});
-      _$jscoverage['receiver.js'][67]++;
+      _$jscoverage['receiver.js'][72]++;
       res.end("Please provide all the required paramerers");
     }
 }
-  _$jscoverage['receiver.js'][74]++;
+  _$jscoverage['receiver.js'][87]++;
   this.onSms = (function (callback) {
-  _$jscoverage['receiver.js'][75]++;
+  _$jscoverage['receiver.js'][88]++;
   events.on("sms", callback);
 });
-  _$jscoverage['receiver.js'][78]++;
+  _$jscoverage['receiver.js'][100]++;
   this.onUssd = (function (callback) {
-  _$jscoverage['receiver.js'][79]++;
+  _$jscoverage['receiver.js'][101]++;
   events.on("ussd", callback);
 });
-  _$jscoverage['receiver.js'][82]++;
+  _$jscoverage['receiver.js'][114]++;
   this.onUssdTerminate = (function (callback) {
-  _$jscoverage['receiver.js'][83]++;
+  _$jscoverage['receiver.js'][115]++;
   events.on("ussdTerminate", callback);
 });
-  _$jscoverage['receiver.js'][86]++;
+  _$jscoverage['receiver.js'][124]++;
   this.close = (function (callback) {
-  _$jscoverage['receiver.js'][88]++;
+  _$jscoverage['receiver.js'][126]++;
   $.ready((function () {
-  _$jscoverage['receiver.js'][89]++;
+  _$jscoverage['receiver.js'][127]++;
   app.close();
-  _$jscoverage['receiver.js'][90]++;
+  _$jscoverage['receiver.js'][128]++;
   if (callback) {
-    _$jscoverage['receiver.js'][90]++;
+    _$jscoverage['receiver.js'][128]++;
     callback();
   }
 }));
 });
 }
-_$jscoverage['receiver.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","var connect = require('connect');","var qbox = require('qbox');","","//handlers","var sms = require('./smsReceiver');","var ussd = require('./ussdReceiver');","","exports.load = function(port) {","\treturn new Receiver(port);","};","","function Receiver(port) {","\t","\tvar EventEmitter = require(\"events\").EventEmitter;","\tvar events = new EventEmitter;","\tconsole.log(events);","\t","\tvar $ = qbox.create();","\tvar app = connect.createServer(","\t\t\tconnect.logger(),","\t\t\tconnect.bodyParser(), ","\t\t    receiveLogic","\t);","\tapp.listen(port, function() {","\t\t$.start();","\t});","\t","\tfunction receiveLogic(req, res) {","\t\t","\t\tif(req.method.toUpperCase() == \"POST\") {","\t\t\t","\t\t\tif(/^\\/ussd/i.exec(req.url)) {","\t\t\t\tussd.handle(req, res, events);","\t\t\t} else {","\t\t\t\tsms.handle(req, res, events);","\t\t\t}","\t\t\t","\t\t} else {","\t\t\tconsole.info(\"unsupported method: \" + req.method + \" received\");","\t\t\tres.writeHead(404, {\"Content-Type\": \"text/plain\"});","\t\t    res.end(\"Please provide all the required paramerers\");","\t\t}","\t\t","\t}","\t","\t//public methods","\t","\tthis.onSms = function(callback) {","\t\tevents.on('sms', callback);","\t};","\t","\tthis.onUssd = function(callback) {","\t\tevents.on('ussd', callback);","\t};","\t","\tthis.onUssdTerminate = function(callback) {","\t\tevents.on('ussdTerminate', callback);","\t};","\t","\tthis.close = function(callback) {","\t\t","\t\t$.ready(function() {","\t\t\tapp.close();","\t\t\tif(callback) callback();","\t\t});","\t};","}"];
+_$jscoverage['receiver.js'].source = ["/**","","\tThe MIT License","\t","\tCopyright (c) 2011 Arunoda Susiripala","\t","\tPermission is hereby granted, free of charge, to any person obtaining a copy","\tof this software and associated documentation files (the \"Software\"), to deal","\tin the Software without restriction, including without limitation the rights","\tto use, copy, modify, merge, publish, distribute, sublicense, and/or sell","\tcopies of the Software, and to permit persons to whom the Software is","\tfurnished to do so, subject to the following conditions:","\t","\tThe above copyright notice and this permission notice shall be included in","\tall copies or substantial portions of the Software.","\t","\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR","\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,","\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE","\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER","\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,","\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN","\tTHE SOFTWARE.",""," */","","var connect = require('connect');","var qbox = require('qbox');","","//handlers","var sms = require('./smsReceiver');","var ussd = require('./ussdReceiver');","","exports.load = function(port) {","\treturn new Receiver(port);","};","","/**"," * Receiver where receive message from Appzone"," * "," * @param port - port which listen for messages from Appzone"," */","function Receiver(port) {","\t","\tvar EventEmitter = require(\"events\").EventEmitter;","\tvar events = new EventEmitter;","\tconsole.log(events);","\t","\tvar $ = qbox.create();","\tvar app = connect.createServer(","\t\t\tconnect.logger(),","\t\t\tconnect.bodyParser(), ","\t\t    receiveLogic","\t);","\tapp.listen(port, function() {","\t\t$.start();","\t});","\t","\tfunction receiveLogic(req, res) {","\t\t","\t\tif(req.method.toUpperCase() == \"POST\") {","\t\t\t","\t\t\tif(/^\\/ussd/i.exec(req.url)) {","\t\t\t\tussd.handle(req, res, events);","\t\t\t} else {","\t\t\t\tsms.handle(req, res, events);","\t\t\t}","\t\t\t","\t\t} else {","\t\t\tconsole.info(\"unsupported method: \" + req.method + \" received\");","\t\t\tres.writeHead(404, {\"Content-Type\": \"text/plain\"});","\t\t    res.end(\"Please provide all the required paramerers\");","\t\t}","\t\t","\t}","\t","\t//public methodds","\t","\t/**","\t * Register a callback when a new SMS arrives","\t * ","\t * @param callback - callback to be registered","\t * \tformat: function(sms) {}","\t * \t\tsms: The SMS received as ","\t * \t\t\t{address: \"234343\", message: \"dscdfHh\", correlator: \"434\", version: \"1.0\"}","\t */","\tthis.onSms = function(callback) {","\t\tevents.on('sms', callback);","\t};","\t","\t/**","\t * Register a callback when a new USSD Normal Message arrives","\t * ","\t * @param callback - callback to be registered","\t * \tformat: function(sms) {}","\t * \t\tsms: The SMS received as ","\t * \t\t\t{address: \"234343\", message: \"dscdfHh\", correlatationId: \"434\", ","\t * \t\t\t conversationId: \"343434394893\", version: \"1.0\"}","\t */","\tthis.onUssd = function(callback) {","\t\tevents.on('ussd', callback);","\t};","\t","\t/**","\t * Register a callback when a new USSD Terminate Message arrives","\t * This indicates the conversation session has been terminated there after","\t * ","\t * @param callback - callback to be registered","\t * \tformat: function(sms) {}","\t * \t\tsms: The SMS received as ","\t * \t\t\t{address: \"234343\", correlatationId: \"434\", ","\t * \t\t\t conversationId: \"343434394893\", version: \"1.0\"}","\t */","\tthis.onUssdTerminate = function(callback) {","\t\tevents.on('ussdTerminate', callback);","\t};","\t","\t/**","\t * This will closed the this receiver's behavior of listen for messgaes","\t * ","\t * @param callback = The callback to be called after this closed","\t * \tformat: function() {}","\t */","\tthis.close = function(callback) {","\t\t","\t\t$.ready(function() {","\t\t\tapp.close();","\t\t\tif(callback) callback();","\t\t});","\t};","}"];
