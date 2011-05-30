@@ -9,9 +9,9 @@ exports.testsStringItem = function() {
 	
 	var message = "the title\n1. one\n";
 	assert.equal(main.render(), message);
-	assert.equal(main.when('one'), 'hello');
+	assert.equal(main.when(1), 'hello');
 	assert.throws(function() {
-		main.when('sdsd');
+		main.when('2');
 	});
 };
 
@@ -24,7 +24,7 @@ exports.testsOtherMenu = function() {
 	
 	var message = "the title\n1. one\n";
 	assert.equal(main.render(), message);
-	assert.equal(main.when('one'), sub);
+	assert.equal(main.when('1'), sub);
 };
 
 exports.testsCallbackWithString = function() {
@@ -37,7 +37,7 @@ exports.testsCallbackWithString = function() {
 	
 	var message = "the title\n1. one\n";
 	assert.equal(main.render(), message);
-	assert.equal(main.when('one'), 'one+++');
+	assert.equal(main.when('1'), 'one+++');
 };
 
 exports.testsCallbackWithMenu= function() {
@@ -51,7 +51,7 @@ exports.testsCallbackWithMenu= function() {
 	
 	var message = "the title\n1. one\n";
 	assert.equal(main.render(), message);
-	assert.equal(main.when('one'), sub);
+	assert.equal(main.when('1'), sub);
 };
 
 exports.testsErrorWhenOnMethod= function() {
