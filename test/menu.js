@@ -91,8 +91,16 @@ exports.testsMessgaeLengthLimitExceeded = function() {
 	assert.throws(function() {
 		var main = menu('main').
 		title('dsfdsfefer').
-		item('dfdds343344444444444444444444444444').on('a').
-		item('dfddsdsssssssssssssssssssssssssssss').on('a').
+		item('dfdds3433444').on('a').
+		item('dfddsdssssssss').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
+		item('dfdds').on('a').
 		item('dfdds').on('a').
 		item('dfdds').on('a').
 		item('dfdds').on('a').
