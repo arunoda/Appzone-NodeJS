@@ -6,15 +6,15 @@ This is 100% appzone compatible client library for NodeJs
 
 Dependencies
 ------------
-NodeJS 0.4 +
-npm 0.3 +
+* NodeJS 0.4 +
+* npm 0.3 +
 
 Installation
 ------------
 npm install appzone
 
-Not Just Dump API
------------------
+Not Just A Dump API
+-------------------
 Appzone for NodeJS is not a dump API which replicates the Appzone Core API but provides you a much cleaner interface to do what you wanted to do.
 Message retries will be happen behind the seen and avoid most of the tedious works from you.
 
