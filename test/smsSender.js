@@ -23,6 +23,29 @@ exports.testsSendMessage = function() {
 	
 };
 
+exports.testsSendMessageShrinkTo160 = function() {
+	
+	var message = "111111111111111111111111111342343443534543543534543543543543654645745754654646565788888888888855555555555555555555555555555555555555555555555555555555555555555656";
+	require('../simulator/simulator.js').load(function afterStarted(simulator, port) {
+		simulator.onMessage(function(sms) {
+			assert.equal(sms.message.length, 160);
+			assert.equal(sms.address, "tel:0721222333");
+		});
+
+		simulator.onAuth(function(appId, pass) {
+			assert.equal(appId, "app");
+			assert.equal(pass, "pass");
+		});
+		
+		var sender = appzone.sender("http://localhost:" + port, "app", "pass", 100);
+		sender.sendSms("0721222333", message, function(err, status) {
+			assert.equal(status.statusDescription, "SUCCESS");
+			simulator.close();
+		});
+	});
+	
+};
+
 exports.testsSendMessageRetryFailedForever = function() {
 	
 	require('../simulator/simulator.js').load(function afterStarted(simulator, port) {
