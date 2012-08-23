@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/arunoda/Appzone-NodeJS.png)](http://travis-ci.org/arunoda/Appzone-NodeJS)
 NodeJs Client for Appzone
 =========================
 
